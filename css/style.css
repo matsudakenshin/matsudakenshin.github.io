@@ -183,14 +183,13 @@ header #inner {
 
 /* 中の動画 */
 .phone-frame iframe {
-  z-index: 10;
   position: absolute;
-  top: 8%;
-  right: 13%;
-  width: 72%;
-  height: 22%;
+  top: 12%;
+  left: 12%;
+  width: 76%;
+  height: 76%;
   border: none;
-  border-radius: 12px;
+  border-radius: 14px;
 }
 .mv-row {
   display: flex;
