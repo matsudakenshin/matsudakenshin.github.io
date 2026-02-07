@@ -145,7 +145,7 @@ header #inner {
   padding-left: 10px; /*アクセントラインと文字の間にとる余白*/
 }
 .center {
-  width: 600px;
+  width: 80%;
   margin: 0 auto;
 }
 /*各ボックス*/
@@ -234,14 +234,8 @@ small {
     background-image: url("../images/bgimg_sp.png");
   }
 
-  /* .mv-img {
-    display: none;
-} */
   /*ヘッダー（サイトロゴとメニューが入ったブロック）
 ---------------------------------------------------------------------------*/
-  header {
-    margin-bottom: 20px;
-  }
   header #inner {
     width: auto;
     padding: 20px 0px 10px; /*上・左右・下へのボックス内の余白*/
