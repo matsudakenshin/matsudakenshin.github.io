@@ -18,7 +18,6 @@ body {
 body#top {
 	background: #fff  no-repeat center bottom;	/*古いブラウザ用*/
 	background: #fff  no-repeat center bottom/120%;	/*背景色、背景画像の読み込み、リピートしない、中央下部に配置、ウィンドウに対する表示サイズ幅。サイズは古いブラウザには未対応。*/
-  
 }
 h1,h2,h3,h4,h5,p,ul,ol,li,dl,dt,dd,form,figure,form{
 	margin: 0px;
@@ -193,8 +192,6 @@ header #inner {
 
 }
 
-
-
 /*ここからスマートフォン用（480px以下）環境の設定
 ---------------------------------------------------------------------------*/
 /*表示を切り替えるウィンドウサイズの指定*/
@@ -202,8 +199,9 @@ header #inner {
 body {
     display: block;
 }
-#main {
-    height: 100vh;
+#main-img {
+    /* height: 100vh; */
+	width: 100%;
     background: url("../images/bgimg_sp.png") center center / cover no-repeat;
 }
 .mv-img {
@@ -312,7 +310,3 @@ span.color1{
   margin-left: 20px;
 
 }
-
-
-
-
