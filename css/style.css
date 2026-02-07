@@ -32,15 +32,13 @@ img {
 	height: auto;
   display: block;
 }
-/* .mv-img {
-  width: 100%;
-  height: auto;
-} */
+
  #main-img-sp {
 	display: none;
 }
 #main-img{
 	width: 100%;
+	height: auto;
     background: url("../images/bgimg.png") center center / cover no-repeat;
 }
 
