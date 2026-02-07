@@ -32,16 +32,12 @@ img {
 	height: auto;
   display: block;
 }
-
- #main-img-sp {
-	display: none;
-}
 #main-img{
-	width: 100%;
-	height: auto;
-    background: url("../images/bgimg.png") center center / cover no-repeat;
+  width: 100%;
+  height: 60vh;
+  min-height: 320px;
+  background: url("../images/bgimg.png") center center / cover no-repeat;
 }
-
 
 /*リンク（全般）設定
 ---------------------------------------------------------------------------*/
@@ -212,14 +208,10 @@ header #inner {
 body {
     display: block;
 }
-#main-img-sp {
-    /* height: 100vh; */
-	width: 100%;
-    background: url("../images/bgimg_sp.png") center center / cover no-repeat;
-}
 #main-img{
-	display: none;
+  background-image: url("../images/bgimg_sp.png");
 }
+
 /* .mv-img {
     display: none;
 } */
@@ -231,7 +223,7 @@ header {
 header #inner {
 	width: auto;
 	padding: 20px 0px 10px; /*上・左右・下へのボックス内の余白*/
-	text-align: left; /*中身を左よせ*/
+	text-align: center;
 }
 
 /*スマホ用メニューを非表示から表示に切り替える*/
