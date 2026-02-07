@@ -170,12 +170,14 @@ header #inner {
 .list figure:hover {
   opacity: 1; /*透明度。1は100%の事。*/
 }
+.mv-row {
+	margin: 20px;
+}
 
 /* スマホフレーム */
 .phone-frame {
   position: relative;
-  width: 600px; /* スマホ枠の表示サイズ */
-  background: url("../images/flame.png") center / contain no-repeat;
+  width: 550px; /* スマホ枠の表示サイズ */
   margin: 0 auto;
 }
 .phone-img {
@@ -185,10 +187,10 @@ header #inner {
 /* 中の動画 */
 .phone-screen {
   position: absolute;
-  top: 8%;
-  left: 13%;
-  width: 72%;
-  height: 84%;
+  top: 0%;
+  left: 15%;
+  width: 73%;
+  height: 100%;
 
   display: flex;
   align-items: center;
@@ -196,8 +198,8 @@ header #inner {
 }
 .phone-screen iframe {
   width: 100%;
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
+  aspect-ratio: 16 / 10;
+
 }
 
 .lyrics-block {
