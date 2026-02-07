@@ -115,8 +115,8 @@ header #inner {
 
 /*メインコンテンツ
 ---------------------------------------------------------------------------*/
-.mainInner{
-margin-top: 20px;
+.mainInner {
+  margin-top: 20px;
 }
 #main {
   clear: both;
@@ -169,6 +169,48 @@ margin-top: 20px;
 /*マウスオン時の画像*/
 .list figure:hover {
   opacity: 1; /*透明度。1は100%の事。*/
+}
+
+/* スマホフレーム */
+.phone-frame {
+  position: relative;
+  width: 500px; /* スマホ枠の表示サイズ */
+  aspect-ratio: 9 / 19; /* 縦長スマホ比率 */
+  background: url("../images/flame.png") center / contain no-repeat;
+  margin: 0 auto;
+}
+
+/* 中の動画 */
+.phone-frame iframe {
+  position: absolute;
+  top: 8%;
+  left: 7%;
+  width: 86%;
+  height: 84%;
+  border: none;
+  border-radius: 12px;
+}
+.mv-row {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.lyrics-block {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.8;
+}
+
+.credit {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.lyric {
+  font-size: 12px;
 }
 
 /*フッター設定
@@ -235,6 +277,13 @@ small {
   #main-img {
     background-image: url("../images/bgimg_sp.png");
   }
+  .mv-row {
+    flex-direction: column;
+    align-items: center;
+  }
+  .phone-frame {
+    width: 260px;
+  }
 
   /*ヘッダー（サイトロゴとメニューが入ったブロック）
 ---------------------------------------------------------------------------*/
@@ -243,8 +292,8 @@ small {
     padding: 20px 0px 10px; /*上・左右・下へのボックス内の余白*/
     text-align: center;
   }
-  .sp{
-	padding-bottom: 20px;
+  .sp {
+    padding-bottom: 20px;
   }
 
   /*スマホ用メニューを非表示から表示に切り替える*/
@@ -308,12 +357,12 @@ small {
 }
 
 /* 追加 */
-.rightimg{
-	margin: auto;
-	display: flex;
-    justify-content: flex-end;
-	z-index: 0;
-	background: linear-gradient(
+.rightimg {
+  margin: auto;
+  display: flex;
+  justify-content: flex-end;
+  z-index: 0;
+  background: linear-gradient(
     to top,
     transparent 0%,
     transparent 70%,
