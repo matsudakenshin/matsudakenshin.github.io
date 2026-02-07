@@ -241,6 +241,9 @@ small {
     padding: 20px 0px 10px; /*上・左右・下へのボックス内の余白*/
     text-align: center;
   }
+  .sp{
+	padding-bottom: 20px;
+  }
 
   /*スマホ用メニューを非表示から表示に切り替える*/
   nav#menubar-s {
