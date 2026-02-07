@@ -161,7 +161,7 @@ footer{
 .footerInner{
   /* min-height: 50vh; */
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   box-sizing: border-box;
 }
 
@@ -211,8 +211,8 @@ header {
 }
 header #inner {
 	width: auto;
-	padding: 20px 0px 10px;	/*上・左右・下へのボックス内の余白*/
-	text-align: left;	/*中身を左よせ*/
+	padding: 20px 0px 10px; /*上・左右・下へのボックス内の余白*/
+	text-align: left; /*中身を左よせ*/
 }
 
 /*メニュー
