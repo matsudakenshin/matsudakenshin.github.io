@@ -31,6 +31,7 @@ img {
 	border: none;
 	max-width: 100%;
 	height: auto;
+  display: block;
 }
 .mv-img {
   width: 100%;
@@ -311,6 +312,7 @@ span.color1{
   margin-left: 20px;
 
 }
+
 
 
 
