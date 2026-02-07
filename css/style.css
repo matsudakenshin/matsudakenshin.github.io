@@ -173,29 +173,31 @@ header #inner {
 
 /* スマホフレーム */
 .phone-frame {
-  z-index: 50;
   position: relative;
   width: 600px; /* スマホ枠の表示サイズ */
-  aspect-ratio: 9 / 19; /* 縦長スマホ比率 */
   background: url("../images/flame.png") center / contain no-repeat;
   margin: 0 auto;
 }
-
-/* 中の動画 */
-.phone-frame iframe {
-  position: absolute;
-  top: 12%;
-  left: 12%;
-  width: 76%;
-  height: 76%;
-  border: none;
-  border-radius: 14px;
+.phone-img {
+  width: 100%;
+  display: block;
 }
-.mv-row {
+/* 中の動画 */
+..phone-screen {
+  position: absolute;
+  top: 8%;
+  left: 13%;
+  width: 72%;
+  height: 84%;
+
   display: flex;
-  gap: 40px;
-  align-items: flex-start;
-  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.phone-screen iframe {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
 }
 
 .lyrics-block {
