@@ -115,6 +115,9 @@ header #inner {
 
 /*メインコンテンツ
 ---------------------------------------------------------------------------*/
+.mainInner{
+margin-top: 20px;
+}
 #main {
   clear: both;
   width: 100%;
@@ -305,7 +308,20 @@ small {
 }
 
 /* 追加 */
-.rightimg {
+.rightimg{
+	margin: auto;
+	display: flex;
+    justify-content: flex-end;
+	z-index: 0;
+	background: linear-gradient(
+    to top,
+    transparent 0%,
+    transparent 70%,
+    #fff 100%
+  );
+}
+
+/* .rightimg {
   display: block;
   text-align: right;
   margin-top: -50px;
@@ -316,7 +332,7 @@ small {
     transparent 70%,
     #fff 100%
   );
-}
+} */
 
 span.color1 {
   color: red;
