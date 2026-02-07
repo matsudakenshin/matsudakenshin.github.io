@@ -1,8 +1,7 @@
 @charset "utf-8";
-
-
-/*全体の設定
----------------------------------------------------------------------------*/
+html, body {
+  height: 100%;
+}
 body {
 	margin: 0px;
 	padding: 0px;
@@ -12,6 +11,8 @@ body {
 	line-height: 2;		/*行間*/
 	background: #fff;	/*背景色*/
 	-webkit-text-size-adjust: none;
+	display: flex;
+	flex-direction: column;
 }
 /*トップページの背景画像*/
 body#top {
@@ -101,12 +102,12 @@ header #inner {
 #main {
 	clear: both;
 	width: 100%;
-  margin-bottom: -10px;
+	flex: 1;
 }
 /*mainコンテンツのh2タグの設定*/
 #main h2 {
 	clear: both;
-  margin-top: -20px;
+  	margin-top: -20px;
 	margin-bottom: 10px;
 	font-size: 100%;
 	color: #FFF;		/*文字色*/
@@ -148,14 +149,12 @@ header #inner {
 /*フッター設定
 ---------------------------------------------------------------------------*/
 footer{
-	clear: both;
-	text-align: center;
-	padding-top: 30px;
+  clear: both;
+  text-align: center;
   background-color: black;
   width: 100%;
   padding: 10px 0;
-  position: absolute;/*←絶対位置*/
-
+  /* position: absolute;  */
 }
 
 .footerInner{
@@ -307,4 +306,5 @@ span.color1{
 
 .mv p{
   margin-left: 20px;
+
 }
