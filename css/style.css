@@ -183,7 +183,7 @@ header #inner {
   display: block;
 }
 /* 中の動画 */
-..phone-screen {
+.phone-screen {
   position: absolute;
   top: 8%;
   left: 13%;
