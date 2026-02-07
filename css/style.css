@@ -203,7 +203,7 @@ body {
 }
 #main {
     height: 100vh;
-    background: url("../images/bgimg.png") center center / cover no-repeat;
+    background: url("../images/bgimg_sp.png") center center / cover no-repeat;
 }
 .mv-img {
     display: none;
@@ -311,5 +311,6 @@ span.color1{
   margin-left: 20px;
 
 }
+
 
 
