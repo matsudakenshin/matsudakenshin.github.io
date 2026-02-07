@@ -173,8 +173,9 @@ header #inner {
 
 /* スマホフレーム */
 .phone-frame {
+  z-index: 50;
   position: relative;
-  width: 500px; /* スマホ枠の表示サイズ */
+  width: 600px; /* スマホ枠の表示サイズ */
   aspect-ratio: 9 / 19; /* 縦長スマホ比率 */
   background: url("../images/flame.png") center / contain no-repeat;
   margin: 0 auto;
@@ -182,11 +183,12 @@ header #inner {
 
 /* 中の動画 */
 .phone-frame iframe {
+  z-index: 10;
   position: absolute;
   top: 8%;
-  left: 7%;
-  width: 86%;
-  height: 84%;
+  right: 13%;
+  width: 72%;
+  height: 22%;
   border: none;
   border-radius: 12px;
 }
