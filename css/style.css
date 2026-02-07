@@ -116,7 +116,9 @@ header #inner {
 /*メインコンテンツ
 ---------------------------------------------------------------------------*/
 .mainInner {
-  margin-top: 20px;
+  max-width: 1200px;   /* ← 広げた */
+  margin: 40px auto;
+  padding: 0 24px;
 }
 #main {
   clear: both;
@@ -126,6 +128,7 @@ header #inner {
 /*mainコンテンツのh2タグの設定*/
 #main h2 {
   clear: both;
+  margin: 40px 0 20px;
   margin-top: -20px;
   margin-bottom: 10px;
   font-size: 100%;
@@ -148,7 +151,7 @@ header #inner {
   padding-left: 10px; /*アクセントラインと文字の間にとる余白*/
 }
 .center {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 /*各ボックス*/
@@ -171,46 +174,47 @@ header #inner {
   opacity: 1; /*透明度。1は100%の事。*/
 }
 .mv-row {
-  margin: 20px;
   display: flex;
   align-items: flex-start;
-  gap: 60px;
+  /* gap: 40px; */
+  margin: 40px 0;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 .content-wrap {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
 }
-.lyrics {
-  width: 40%;
-  max-width: 520px;
+.lyrics-block {
+  flex: 0 0 55%;
 }
 /* スマホフレーム */
 .phone-frame {
+  flex: 1;
+  max-width: none;
   position: relative;
-  width: 420px;
-  /* margin: 0 auto; ←削除 */
 }
-.phone-img {
-  width: 100%;
-  display: block;
+.phone-frame {
+  flex: 1;
+  max-width: none;
+  margin-top: -9px;
 }
 /* 中の動画 */
 .phone-screen {
   position: absolute;
-  top: 0%;
+  top: 6%;
   left: 15%;
-  width: 73%;
-  height: 100%;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  width: 74%;
+  height: 88%;
+}
+.phone-img {
+  width: 100%;
 }
 .phone-screen iframe {
   width: 100%;
-  aspect-ratio: 16 / 10;
-
+  height: 100%;
+  border: none;
 }
 
 .lyrics-block {
@@ -222,6 +226,7 @@ header #inner {
   font-size: 14px;
   font-weight: bold;
   margin-bottom: 10px;
+  margin-top: -15px;
 }
 
 .lyric {
@@ -294,10 +299,16 @@ small {
   }
   .mv-row {
     flex-direction: column;
-    align-items: center;
   }
+
   .phone-frame {
-    width: 260px;
+	margin-top: 10px;
+    max-width: 100%;
+    /* width: 280px; */
+  }
+
+  .lyrics-block {
+    width: 100%;
   }
 
   /*ヘッダー（サイトロゴとメニューが入ったブロック）
