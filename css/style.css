@@ -171,14 +171,25 @@ header #inner {
   opacity: 1; /*透明度。1は100%の事。*/
 }
 .mv-row {
-	margin: 20px;
+  margin: 20px;
+  display: flex;
+  align-items: flex-start;
+  gap: 60px;
 }
-
+.content-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.lyrics {
+  width: 40%;
+  max-width: 520px;
+}
 /* スマホフレーム */
 .phone-frame {
   position: relative;
-  width: 550px; /* スマホ枠の表示サイズ */
-  margin: 0 auto;
+  width: 420px;
+  /* margin: 0 auto; ←削除 */
 }
 .phone-img {
   width: 100%;
@@ -203,9 +214,8 @@ header #inner {
 }
 
 .lyrics-block {
-  flex: 1;
-  font-size: 14px;
-  line-height: 1.8;
+  width: 40%;
+  max-width: 520px;
 }
 
 .credit {
